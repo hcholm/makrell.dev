@@ -14,6 +14,8 @@ Here is a basic Makrell function:
 
 .. code-block:: makrell
 
+    # function definition
+    
     {add [x y]
         x + y  # implicit return
     }
