@@ -34,11 +34,11 @@ jobs:
     #     target: "/eget/makrell/www"
     #     strip_components: 2  # Removes "build/html" from path
 
-  - name: Deploy to Server
-    uses: appleboy/ssh-action@v0.1.7
-    with:
-      host: makrell.dev
-      username: hcholm
-      key: ${{ secrets.DEPLOY_SSH_KEY }}
-      script: |
-        rsync -av --delete build/html/ /eget/makrell/www/
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@v0.1.7
+      with:
+        host: makrell.dev
+        username: hcholm
+        key: ${{ secrets.DEPLOY_SSH_KEY }}
+        script: |
+          rsync -av --delete build/html/ /eget/makrell/www/
