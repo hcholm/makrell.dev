@@ -24,21 +24,21 @@ jobs:
     - name: Build Documentation
       run: make html
 
-    # - name: Deploy to Server
-    #   uses: appleboy/scp-action@v0.1.7
-    #   with:
-    #     host: makrell.dev
-    #     username: hcholm
-    #     key: ${{ secrets.DEPLOY_SSH_KEY }}
-    #     source: "build/html/*"
-    #     target: "/eget/makrell/www"
-    #     strip_components: 2  # Removes "build/html" from path
-
     - name: Deploy to Server
-      uses: appleboy/ssh-action@v0.1.7
+      uses: appleboy/scp-action@v0.1.7
       with:
         host: makrell.dev
         username: hcholm
         key: ${{ secrets.DEPLOY_SSH_KEY }}
-        script: |
-          rsync -av --delete build/html/ /eget/makrell/www/
+        source: "build/html/*"
+        target: "/eget/makrell/www"
+        strip_components: 2  # Removes "build/html" from path
+
+    # - name: Deploy to Server
+    #   uses: appleboy/ssh-action@v0.1.7
+    #   with:
+    #     host: makrell.dev
+    #     username: hcholm
+    #     key: ${{ secrets.DEPLOY_SSH_KEY }}
+    #     script: |
+    #       rsync -av --delete build/html/ /eget/makrell/www/
