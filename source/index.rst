@@ -26,4 +26,6 @@ Here is a basic Makrell function:
    getting-started
    makrellpy/index
    mron
+   mrml
+   base-format
 
