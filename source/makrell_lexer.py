@@ -12,10 +12,10 @@ class MakrellLexer(RegexLexer):
         'root': [
             (r'#.*$', Comment.Single),
             (r'(".*?")', String),
-            (r'\b(def|if|fun|while|return)\b', Keyword),
+            (r'\b(def|if|fun|while|return|match)\b', Keyword),
             (r'\b([A-Za-z_][A-Za-z0-9_]*)\b', Name),
             (r'(\d+)', Number),
-            (r'(\+|\-|\*|/|=|\.|,)', Operator),
+            (r'(\+|\-|\*|/|=|\.|,|\||@|:|<|>|!|&|\\)', Operator),
             (r'\s+', Text),
             (r'(\(|\)|\[|\]|\{|\})', String.Delimiter),
         ]
