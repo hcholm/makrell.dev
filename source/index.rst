@@ -100,7 +100,7 @@ The following is a quick introduction by example to the MakrellPy language.
     b = 2 | {😐 3}           # 6
 
     # A macro that composes a sequence of functions
-    {macro pipe [ns]            # ns is a list of syntax nodes (AST nodes) inside the macro
+    {def macro pipe [ns]            # ns is a list of syntax nodes (AST nodes) inside the macro
         ns = {regular ns}       # built-in function to remove whitespace and comments nodes
         p = ns@0                # ns@0 is the first element of ns
         i = 1

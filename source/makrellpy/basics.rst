@@ -39,6 +39,17 @@ Note that these values have more C-style names instead of Python-style names (th
     false   # Python: False
     null    # Python: None
 
+E-Strings
+^^^^^^^^^
+
+E-strings are strings that can contain MakrellPy expressions:
+
+.. code-block:: makrell
+
+    "2 + 3 = {2 + 3}"e                          # "2 + 3 = 5"
+
+    "a{2 + 3}{{sum [5 7 11]}}{[13 17]|sum}"e    # "a52330"
+
 Lists
 ^^^^^
 

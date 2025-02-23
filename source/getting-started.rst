@@ -15,7 +15,9 @@ From PyPI
 Install latest version from GitHub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Directly:
+The code is hosted on GitHub at https://github.com/hcholm/makrell-py .
+
+Direct installation:
 
 .. code-block:: bash
 
