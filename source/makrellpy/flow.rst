@@ -61,7 +61,7 @@ Loops
 Pattern Matching
 ----------------
 
-``match`` is a powful feature that allows you to match a value against a set of patterns. The first pattern that matches the value is executed. Patterns can be literals, lists, types, or wildcards. If no pattern matches, ``match`` returns ``null``. Examples:
+``match`` is a feature that allows you to match a value against a set of patterns. The first pattern that matches the value is executed. Patterns can be literals, lists, types, or wildcards. If no pattern matches, ``match`` returns ``null``. Examples:
 
 .. code-block:: makrell
 

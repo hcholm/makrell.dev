@@ -46,7 +46,7 @@ Run a MakrellPy script
 IDE Support
 -----------
 
-MakrellPy is supported by the MakrellPy Language Server, included in the Makrell package. The language server is based on the [LSP](https://microsoft.github.io/language-server-protocol/) protocol and can be used with any LSP-compatible editor, such as Visual Studio Code, Sublime Text, Atom, Vim, Emacs etc. A VS Code extension is available [here](https://marketplace.visualstudio.com/items?itemName=hcholm.vscode-makrell).
+MakrellPy is supported by the MakrellPy Language Server, included in the Makrell package. The language server is based on the `LSP <https://microsoft.github.io/language-server-protocol>`_ protocol and can be used with any LSP-compatible editor, such as Visual Studio Code, Sublime Text, Atom, Vim, Emacs etc. A VS Code extension is available `here <https://marketplace.visualstudio.com/items?itemName=hcholm.vscode-makrell>`_.
 
 .. image:: /_static/ide.png
     :alt: MakrellPy in VS Code
