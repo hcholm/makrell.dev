@@ -5,6 +5,8 @@ Getting Started
 Installation
 ------------
 
+Current release is **0.9.0**.
+
 From PyPI
 ^^^^^^^^^
 

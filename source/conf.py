@@ -18,7 +18,7 @@ lexers['makrell'] = MakrellLexer()
 project = 'Makrell'
 copyright = '2025, Hans-Christian Holm'
 author = 'Hans-Christian Holm'
-release = '0.9'
+# release = '0.9'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

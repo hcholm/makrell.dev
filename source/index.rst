@@ -124,28 +124,10 @@ Other Features
 
 * Class definitions
 * String interpolation
-* Function composition
-* Meta programming, including macros, custom operators and embedded mini-languages
+* Functional programming
+* Pattern matchings
+* Metaprogramming, including macros, custom operators and embedded mini-languages
 * Python interoperability
-
-TODOs, wishlist and ideas
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* More built-in functions, operators, data types etc.
-* Fix bugs
-* Various missing Python features, such as decorators, yield and async/await
-* Basic typing or type hints as in Python
-* Pattern matching and destructuring
-* More advanced typing, possibly with inference and unified with pattern matching and grammar expressions in some mini-language
-* Better error messages and better IDE support
-* More documentation and examples
-* Compilers and code generators for other languages and platforms
-* A composable query language for heterogeneous sources, such as databases, object structures, web services etc.
-* Mini-languages for regular expressions and BNF
-* An API for traversing and transforming MBF trees
-* A templating language
-* A website with tutorials, documentation and a playground
-* Implementations in other languages
 
 
 MRON
