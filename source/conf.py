@@ -24,13 +24,15 @@ author = 'Hans-Christian Holm'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "myst_parser",
+    'myst_parser',
 ]
 
 templates_path = ['_templates']
 exclude_patterns = []
 
-
+if os.getenv("GITHUB_ACTIONS") or os.getenv("TRAVIS") or os.getenv("CIRCLECI") or os.getenv("GITLAB_CI"):
+    extensions.append("sphinxcontrib.googleanalytics")
+    googleanalytics_id = "G-3431CMCBXW"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
