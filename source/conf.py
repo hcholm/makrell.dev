@@ -30,9 +30,11 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
-if os.getenv("GITHUB_ACTIONS") or os.getenv("TRAVIS") or os.getenv("CIRCLECI") or os.getenv("GITLAB_CI"):
-    extensions.append("sphinxcontrib.googleanalytics")
-    googleanalytics_id = "G-3431CMCBXW"
+# if os.getenv("GITHUB_ACTIONS") or os.getenv("TRAVIS") or os.getenv("CIRCLECI") or os.getenv("GITLAB_CI"):
+#     extensions.append("sphinxcontrib.googleanalytics")
+#     googleanalytics_id = "G-3431CMCBXW"
+extensions.append("sphinxcontrib.googleanalytics")
+googleanalytics_id = "G-3431CMCBXW"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -41,3 +43,13 @@ if os.getenv("GITHUB_ACTIONS") or os.getenv("TRAVIS") or os.getenv("CIRCLECI") o
 html_theme = 'furo'
 html_static_path = ['_static']
 
+html_css_files = [
+    # "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
+    'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css'
+]
+
+html_js_files = [
+    # "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js",
+    'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js',
+    "cookie-init.js"  # This script initializes the banner
+]
