@@ -22,6 +22,7 @@ Enhancements to current version
 * Pattern matching:
   * Variable binding.
   * Regex-like sequence patterns.
+  * Dictionary patterns.
 * True metaprogramming for custom operators.
 * Better error messages.
 * Better handling of illegal syntax.
@@ -36,5 +37,7 @@ Ideas for future versions
 * Typing.
 * Compilers and code generators for other languages and platforms
 * A composable query language for heterogeneous sources, such as databases, object structures, web services etc.
-* BNF as match patterns.
+* Online interpreter.
+* More command line options.
   
+
